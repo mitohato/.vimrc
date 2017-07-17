@@ -8,6 +8,8 @@ set expandtab
 set clipboard+=unnamed
 set backspace=indent,eol,start
 set completeopt=menuone
+set nowrap
+
 for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
   exec "imap <expr> " . k . " pumvisible() ? '" . k . "' : '" . k . "\<C-X>\<C-P>\<C-N>'"
   endfor
@@ -24,23 +26,21 @@ inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap ( ()<left>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 inoremap[ []<left>
-"noremap< <><left>
 inoremap " ""<left>
 inoremap ' ''<left>
 
-function! Hard ()
- noremap <Up> <Nop>
- noremap <Down> <Nop>
- noremap <Right> <Nop>
- noremap <Left> <Nop>
-endfunction
-
-function! Easy ()
- noremap <Up> <Up>
- noremap <Down> <Down>
- noremap <Right> <Right>
- noremap <Left> <Left>
-endfunction
-
 command! Hard call Hard()
 command! Easy call Easy()
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'udalov/kotlin-vim'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
