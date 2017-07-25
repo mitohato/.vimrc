@@ -29,9 +29,6 @@ inoremap[ []<left>
 inoremap " ""<left>
 inoremap ' ''<left>
 
-command! Hard call Hard()
-command! Easy call Easy()
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 " set the runtime path to include Vundle and initialize
