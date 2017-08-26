@@ -9,6 +9,10 @@ set clipboard+=unnamed
 set backspace=indent,eol,start
 set completeopt=menuone
 set nowrap
+set showmatch
+set autoread
+set noswapfile
+
 
 for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
   exec "imap <expr> " . k . " pumvisible() ? '" . k . "' : '" . k . "\<C-X>\<C-P>\<C-N>'"
@@ -17,9 +21,9 @@ syntax on
 
 highlight CursorLine cterm=none ctermbg=none
 
-autocmd BufNewFile *.cpp 0r $HOME/.vim/template/cpp.txt
-autocmd BufNewFile *.c 0r $HOME/.vim/template/c.txt
-autocmd BufNewFile *.java 0r $HOME/.vim/template/java.txt
+autocmd BufNewFile *.cpp 0r $HOME/github/template/cpp.txt
+autocmd BufNewFile *.c 0r $HOME/github/template/c.txt
+autocmd BufNewFile *.java 0r $HOME/github/template/java.txt
 inoremap <silent> @@ <ESC>
 inoremap { {}<Left>
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
