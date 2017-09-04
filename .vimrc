@@ -13,7 +13,6 @@ set showmatch
 set autoread
 set noswapfile
 
-
 for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
   exec "imap <expr> " . k . " pumvisible() ? '" . k . "' : '" . k . "\<C-X>\<C-P>\<C-N>'"
   endfor
@@ -25,6 +24,7 @@ autocmd BufNewFile *.cpp 0r $HOME/github/template/cpp.txt
 autocmd BufNewFile *.c 0r $HOME/github/template/c.txt
 autocmd BufNewFile *.java 0r $HOME/github/template/java.txt
 inoremap <silent> @@ <ESC>
+inoremap <silent> jj <ESC>
 inoremap { {}<Left>
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap ( ()<left>
