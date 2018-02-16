@@ -24,6 +24,7 @@ autocmd BufNewFile *.cpp 0r $HOME/github/template/cpp.txt
 autocmd BufNewFile *.c 0r $HOME/github/template/c.txt
 autocmd BufNewFile *.java 0r $HOME/github/template/java.txt
 inoremap <C-j> <esc>
+noremap <C-j> <esc>
 inoremap <silent> jj <ESC>
 inoremap { {}<Left>
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
