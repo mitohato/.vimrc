@@ -23,8 +23,6 @@ highlight CursorLine cterm=none ctermbg=none
 autocmd BufNewFile *.cpp 0r $HOME/.ghq/github.com/mitohato/template/cpp.txt
 autocmd BufNewFile *.c 0r $HOME/.ghq/github.com/mitohato/template/c.txt
 autocmd BufNewFile *.java 0r $HOME/.ghq/github.com/mitohato/template/java.txt
-inoremap <C-j> <esc>
-noremap <C-j> <esc>
 inoremap <silent> jj <ESC>
 inoremap { {}<Left>
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
