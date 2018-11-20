@@ -5,7 +5,7 @@ set cindent
 set title
 set shiftwidth=2
 set expandtab
-set clipboard+=unnamed
+" set clipboard+=unnamed
 set backspace=indent,eol,start
 set completeopt=menuone
 set nowrap
