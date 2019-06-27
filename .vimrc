@@ -29,18 +29,18 @@ inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap ( ()<left>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 inoremap[ []<left>
-inoremap " ""<left>
-inoremap ' ''<left>
+" inoremap " ""<left>
+" inoremap ' ''<left>
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
-Plugin 'udalov/kotlin-vim'
+" Plugin 'gmarik/Vundle.vim'
+" Plugin 'udalov/kotlin-vim'
 
-call vundle#end()            " required
+" call vundle#end()            " required
 filetype plugin indent on    " required
 
