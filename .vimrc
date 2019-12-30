@@ -25,11 +25,11 @@ autocmd BufNewFile *.cpp 0r $HOME/.ghq/github.com/mitohato/template/cpp.txt
 autocmd BufNewFile *.c 0r $HOME/.ghq/github.com/mitohato/template/c.txt
 autocmd BufNewFile *.java 0r $HOME/.ghq/github.com/mitohato/template/java.txt
 inoremap <silent> jj <ESC>
-inoremap { {}<Left>
+"inoremap { {}<Left>
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap ( ()<left>
+"inoremap ( ()<left>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
-inoremap[ []<left>
+"inoremap[ []<left>
 " inoremap " ""<left>
 " inoremap ' ''<left>
 
