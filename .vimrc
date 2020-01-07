@@ -6,6 +6,8 @@ set cindent
 set title
 set shiftwidth=2
 set expandtab
+set smarttab
+set shiftround
 " set clipboard+=unnamed
 set backspace=indent,eol,start
 set completeopt=menuone
@@ -13,6 +15,8 @@ set nowrap
 set showmatch
 set autoread
 set noswapfile
+
+set softtabstop=0
 
 for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
   exec "imap <expr> " . k . " pumvisible() ? '" . k . "' : '" . k . "\<C-X>\<C-P>\<C-N>'"
